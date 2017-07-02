@@ -1,3 +1,9 @@
-<p>
-  counter works!
-</p>
+<section>
+  <div class="container has-text-centered">
+    <h1 class="title">Counter</h1>
+    <h2 class="subtitle">{{ counter | async }}</h2>
+    <button (click)="increment()" class="button">Increment</button>
+    <button (click)="decrement()" class="button">Decrement</button>
+    <button (click)="reset()" class="button is-danger">Reset</button>
+  </div>
+</section>

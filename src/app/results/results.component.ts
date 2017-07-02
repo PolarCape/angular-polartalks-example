@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { Store } from '@ngrx/store';
+
+interface AppState {
+  counter: number;
+}
 
 @Component({
   selector: 'app-results',
@@ -6,8 +12,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./results.component.css']
 })
 export class ResultsComponent implements OnInit {
+  counter: Observable<number>;
 
-  constructor() { }
+  constructor(private store: Store<AppState>) {
+    this.counter = store.select('counter');
+  }
 
   ngOnInit() {
   }
