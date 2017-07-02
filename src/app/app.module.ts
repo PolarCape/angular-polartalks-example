@@ -7,9 +7,16 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { LandingComponent } from './landing/landing.component';
 import { ChapterDetailsComponent } from './chapter-details/chapter-details.component';
 import { SimpleRouteComponent } from './simple-route/simple-route.component';
+import { RouteWithParamComponent } from './route-with-param/route-with-param.component';
+import { GuardedRouteComponent } from './guarded-route/guarded-route.component';
+
+import { SimpleGuard } from './simple.guard';
 
 const appRoutes: Routes = [
-  { path: 'simple-route', component: SimpleRouteComponent }
+  { path: '' , component: LandingComponent },
+  { path: 'simple-route', component: SimpleRouteComponent },
+  { path: 'route-with-param/:someText', component: RouteWithParamComponent },
+  { path: 'guarded-route', component: GuardedRouteComponent, canActivate: [SimpleGuard] }
 ]
 
 @NgModule({
@@ -18,13 +25,15 @@ const appRoutes: Routes = [
     NavigationComponent,
     LandingComponent,
     ChapterDetailsComponent,
-    SimpleRouteComponent
+    SimpleRouteComponent,
+    RouteWithParamComponent,
+    GuardedRouteComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes, { enableTracing: true })
+    RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [SimpleGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
