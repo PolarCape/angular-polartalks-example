@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { LifecycleRenderingComponent } from './lifecycle-rendering/lifecycle-rendering.component';
+import { LandingComponent } from './landing/landing.component';
+import { ChapterDetailsComponent } from './chapter-details/chapter-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    LifecycleRenderingComponent
+    LandingComponent,
+    ChapterDetailsComponent
   ],
   imports: [
     BrowserModule
