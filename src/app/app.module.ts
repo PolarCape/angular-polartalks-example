@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { LifecycleRenderingComponent } from './lifecycle-rendering/lifecycle-rendering.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent
+    NavigationComponent,
+    LifecycleRenderingComponent
   ],
   imports: [
     BrowserModule
