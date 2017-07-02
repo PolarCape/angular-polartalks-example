@@ -4,7 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { RoutingComponent } from './routing/routing.component';
+import { LandingComponent } from './landing/landing.component';
+import { ChapterDetailsComponent } from './chapter-details/chapter-details.component';
 import { SimpleRouteComponent } from './simple-route/simple-route.component';
 
 const appRoutes: Routes = [
@@ -15,7 +16,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     NavigationComponent,
-    RoutingComponent,
+    LandingComponent,
+    ChapterDetailsComponent,
     SimpleRouteComponent
   ],
   imports: [
