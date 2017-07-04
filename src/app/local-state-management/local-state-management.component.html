@@ -1,9 +1,11 @@
 <section>
-  <div class="container">
-    <h1>Local Variables</h1>
+  <div class="container has-text-centered">
+    <h1 class="title">Local Variables</h1>
     <p>{{ firstName }}</p>
     <p>{{ lastName }}</p>
     <p>{{ age }}</p>
     <app-display-full-name [firstName]="firstName" [lastName]="lastName" ></app-display-full-name>
+
+    <button (click)="changeFirstName()" class="button">Update first name</button>
   </div>
 </section>

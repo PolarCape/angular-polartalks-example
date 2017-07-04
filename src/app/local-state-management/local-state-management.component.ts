@@ -15,4 +15,8 @@ export class LocalStateManagementComponent implements OnInit {
   ngOnInit() {
   }
 
+  changeFirstName() {
+    this.firstName = 'Jane';
+  }
+
 }
