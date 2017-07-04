@@ -12,4 +12,8 @@ export class ValidationComponent implements OnInit {
   ngOnInit() {
   }
 
+  submitForm(formValue) {
+    console.log(formValue);
+  }
+
 }
