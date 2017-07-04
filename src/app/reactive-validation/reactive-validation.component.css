@@ -1,0 +1,13 @@
+.form-wrapper {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
