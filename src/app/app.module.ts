@@ -4,16 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { LandingComponent } from './landing/landing.component';
-import { ChapterDetailsComponent } from './chapter-details/chapter-details.component';
-import { LifecycleRenderingComponent } from './lifecycle-rendering/lifecycle-rendering.component';
+import { ValidationComponent } from './validation/validation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     LandingComponent,
-    ChapterDetailsComponent,
-    LifecycleRenderingComponent
+    ValidationComponent
   ],
   imports: [
     BrowserModule
